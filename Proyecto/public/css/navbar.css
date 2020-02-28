@@ -1,0 +1,9 @@
+.back{
+    color: aliceblue;
+    background: #21d192;
+}
+.navbar a{
+    color: aliceblue !important;
+    text-decoration: none !important;
+}
+

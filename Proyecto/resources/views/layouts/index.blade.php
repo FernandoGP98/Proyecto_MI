@@ -7,103 +7,113 @@
 
         <title>Laravel</title>
 
+        <link href="{{ asset('/css/index.css') }}" rel="stylesheet">
+        <link href="{{ asset('/css/navbar.css') }}" rel="stylesheet">
+        <!--Slick-->
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
         <!--Externals-->
-        <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <script src="https://kit.fontawesome.com/0de3fe663e.js" crossorigin="anonymous"></script>
     </head>
+
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+        <nav class="navbar navbar-expand-lg navbar-dark back sticky-top">
+            <a class="navbar-brand" href="/">The three elements</a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                  <a class="nav-link" href="/">Principal</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </li>
+                    <a class="nav-link" href="/jugar">Juega</a>
+                  </li>
                 <li class="nav-item">
-                  <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
+                    <a class="nav-link" href="/explora">Explora</a>
+                  </li>
+                  <!--<li class="nav-item">
+                    <a class="nav-link" href="#">Sobre nosotros</a>
+                  </li>-->
               </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-              </form>
+              <div class="collapse navbar-collapse d-flex justify-content-end">
+                <button class="btn btn-outline-succes my-2 my-sm-0"><a style="text-decoration:none" href="/Login">Ingresar</a></button>
+                <button class="btn btn-outline-succes my-2 my-sm-0"><a href="/Registro">Registrarse</a></button>
+                <!--<form class="form-inline my-2 my-lg-0">
+                    <input style="display: none" class="form-control mr-sm-2" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><i class="fas fa-search"> </i></button>
+                </form>-->
+            </div>
             </div>
           </nav>
 
           @yield('content')
 
-         <!-- Footer -->
-<footer class="page-footer font-small special-color-dark pt-4">
+          <!-- Footer -->
+    <footer class="page-footer font-small blue-grey lighten-5">
 
-    <!-- Footer Elements -->
-    <div class="container">
+        <div style="background-color: #21d192;">
+        <div class="container">
+            <div class="row py-4 d-flex align-items-center">
+                <div class="col-md-6 col-lg-7 text-center text-md-left">
+                    <!-- Facebook -->
+                    <a class="fb-ic">
+                    <i class="fab fa-facebook-f white-text mr-4"> </i>
+                    </a>
+                    <!-- Twitter -->
+                    <a class="tw-ic">
+                    <i class="fab fa-twitter white-text mr-4"> </i>
+                    </a>
+                    <!-- Google +-->
+                    <a class="gplus-ic">
+                    <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                    </a>
+                    <!--Linkedin -->
+                    <a class="li-ic">
+                    <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                    </a>
+                    <!--Instagram-->
+                    <a class="ins-ic">
+                    <i class="fab fa-instagram white-text"> </i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
 
-      <!-- Social buttons -->
-      <ul class="list-unstyled list-inline text-center">
-        <li class="list-inline-item">
-          <a class="btn-floating btn-fb mx-1">
-            <i class="fab fa-facebook-f"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-tw mx-1">
-            <i class="fab fa-twitter"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-gplus mx-1">
-            <i class="fab fa-google-plus-g"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-li mx-1">
-            <i class="fab fa-linkedin-in"> </i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="btn-floating btn-dribbble mx-1">
-            <i class="fab fa-dribbble"> </i>
-          </a>
-        </li>
-      </ul>
-      <!-- Social buttons -->
+        <div class="container text-center text-md-left mt-5">
+            <div class="row dark-grey-text d-flex justify-content-center">
+                <div class="col-md-3 text-center">
 
-    </div>
-    <!-- Footer Elements -->
+                <h6 class="text-uppercase font-weight-bold">Nuestros nombres</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>Maricruz Alvarado Corpus</p>
+                <p>Fernando Gomez Pizaña</p>
 
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
+                </div>
+                <div class="col-md-3 text-center">
 
-  </footer>
-  <!-- Footer -->
-    </body>
+                    <h6 class="text-uppercase font-weight-bold">Logo del juego</h6>
+                    <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Indefinido :(</p>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="text-center">Todas las imagenes usadas por el momento estan sujetas a cambio</div>
+        <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+        <a class="dark-grey-text" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+    </footer>
     <script src="{{ asset('/js/app.js') }}" defer></script>
+</body>
 </html>

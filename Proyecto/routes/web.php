@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/jugar', function () {
+    return view('jugar');
+});
+Route::get('/explora', function () {
+    return view('explora');
+});
+Route::get('/Login', function () {
+    return view('login');
+});
+Route::get('/Registro', function () {
+    return view('registrar');
+});

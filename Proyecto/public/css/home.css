@@ -1,0 +1,77 @@
+.landscape{
+    padding: 0px !important;
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.story{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+}
+.story-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: url('https://cdnb.artstation.com/p/assets/images/images/000/802/915/large/thomas-guillon-island1.jpg?1433416693') center center no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    transform: translateY(-10px);
+}
+.story-content{
+    color: aliceblue;
+    font-size: larger;
+    position: relative;
+    flex-shrink: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.356);
+    padding-top: 140px;
+    padding-left: 80px !important;
+    padding-right: 80px !important;
+    box-sizing: border-box;
+}
+
+.story-content::before{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    display: block;
+    content: '';
+    width: 165px;
+    height: 6px;
+    background: #21d192;
+}
+
+.story-cover{
+    padding-top: 50px;
+    color: aliceblue;
+    background: #00000034;
+}
+
+.bottom-right {
+    font-size: 2.6rem;
+    text-align: left !important;
+    position: absolute;
+    bottom: 16px;
+    left: 190px;
+  }
