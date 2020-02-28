@@ -16,7 +16,7 @@
         <h4 class="bottom-right">La<br>Historia</h4>
     </div>
     <div class="col-md-6 story-content">
-        <p>Despues de semanas navegando en altamar encuentras tierra firme - unas islas misteriosas con muchos secretos.
+        <p>Despues de semanas navegando en altamar encuentras tierra firme - unas islas misteriosas con muchos secretos.<br>
             Se te ha encomendado encontrar los 3 orbes elementales escondidos en lo mas profundo de las islas.<p>
         <p>
             Toma tu espada y embarcate en una gran aventura llena de peligros y aventuras.
